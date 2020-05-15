@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
+
 require('mongoose-currency').loadType(mongoose);
 var Currency = mongoose.Types.Currency;
 
@@ -59,5 +60,6 @@ var dishSchema = new Schema({
     timestamps: true
 });
 var Dishes = mongoose.model('Dish', dishSchema);
+
 
 module.exports = Dishes;
